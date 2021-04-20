@@ -1,0 +1,356 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Technical Documentation Page</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<html>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <nav id="navbar">
+        <header>C Documentation</header>
+        <ul> 
+          <li>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_Tokens">C Tokens</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_Identifiers">C Identifiers</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_Keywords">C Keywords</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_Data_Types">C Data Types</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_Program_Structure">C Program Structure</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_Input_and_Output">C Input and Output</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_if-else_Statements">C if-else Statements</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_for_Loops">C for Loops</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#C_Functions">C Functions</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#References">References</a>
+          </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <h1>C Programming Language</h1>
+        <section class="main-section" id="Introduction">
+          <header><h2>Introduction</h2></header>
+          <p>C is a mid-level structured oriented programming language, used in general-purpose programming, developed by Dennis Ritchie at AT&T Bell Labs, the USA, between 1969 and 1973.</p>
+          <h3>Some Facts About C Programming Language</h3>
+          <ul><li>In <strong>1988</strong>, the <strong>American National Standards Institute (ANSI)</strong> had formalized the C language.</li><li>C was invented to write <strong>UNIX</strong> operating system.</li><li>C is a successor of 'Basic Combined Programming Language' (BCPL) called <strong>B language.</strong></li><li><strong>Linux OS</strong>, <strong>PHP</strong>, and <strong>MySQL</strong> are written in C.</li><li>C has been written in assembly language.</li></ul>
+          <h3>Uses of C programming language</h3>
+          <p>In the beginning, C was used for developing system applications, e.g. : </p>
+          <ul><li>Database Systems</li><li>Language Interpreters</li><li>Compilers and Assemblers</li><li>Operating Systems</li><li>Network Drivers</li><li>Word Processors</li></ul>
+          <h3>Features of C programming language</h3>
+          <ul><li>C is a robust language with a rich set of built-in functions and operators.</li><li>Programs written in C are efficient and fast.</li><li>C is highly portable; programs once written in C can be run on other machines with minor or no modification.</li><li>C is a collection of C library functions; we can also create our function and add it to the C library.</li><li>C is easily extensible.</li></ul>
+          <h3>Advantages of C</h3>
+          <ul><li>C is the building block for many other programming languages.</li><li>Programs written in C are highly portable.</li><li>Several standard functions are there (like in-built) that can be used to develop programs.</li><li>C programs are collections of C library functions, and it's also easy to add functions to the C library.</li><li>The modular structure makes code debugging, maintenance, and testing easier.</li></ul>
+          <h3>Disadvantages of C</h3>
+          <ul><li>C does not provide Object Oriented Programming (OOP) concepts.</li><li>There are no concepts of Namespace in C.</li><li>C&nbsp;does not provide binding or wrapping up of data in a single unit.</li><li>C does not provide Constructor and Destructor.</li></ul>
+        </section>
+        <section class="main-section" id="C_Tokens">
+          <header><h2>C Tokens</h2></header>
+          <p>In C programs, each word and punctuation is referred to as a token. C Tokens are the smallest building block or smallest unit of a C program.
+          The compiler breaks a program into the smallest possible units and proceeds to the various stages of the compilation, which is called token. </p>
+          <h3>C supports six types of tokens:</h3>
+          <ol>
+            <li>Identifiers</li>
+            <li>Keywords</li>
+            <li>Constants</li>
+            <li>Strings</li>
+            <li>Operators</li>
+            <li>Special symbols</li>
+          </ol>
+        </section>
+        <section class="main-section" id="C_Identifiers">
+          <header><h2>C Identifiers</h2></header>
+          <p>Identifiers are names given to different entities such as constants, variables, structures, functions, etc. </p>
+          <h3>Example code</h3>
+          <code class="code-box">
+            int amount;<br> <br>
+            double totalbalance;
+          </code>
+          <p>In the above example, <em>amount</em> and <em>totalbalance</em> are identifiers and int, and double&nbsp;are keywords. </p>
+          <h3>Rules for naming identifiers</h3>
+          <ul>
+            <li>An identifier can only have alphanumeric characters (a-z , A-Z , 0-9) (i.e. letters & digits) and underscore( _ ) symbol.</li> 
+            <li>Identifier names must be unique</li> 
+            <li>The first character must be an alphabet or underscore.</li> 
+            <li>You cannot use a keyword as identifiers.</li> 
+            <li>Only the first thirty-one (31) characters are significant.</li> 
+            <li>It must not contain white spaces.</li>
+            <li>Identifiers are case-sensitive.</li> 
+          </ul>
+        </section>
+        <section class="main-section" id="C_Keywords">
+          <header><h2>C Keywords</h2></header>
+          <p>The C Keywords must be in your information because you can not use them as a variable name. You can't use a keyword as an identifier in your C programs, its reserved words in C library and used to perform an internal operation. The meaning and working of these keywords are already known to the compiler.</p>
+          <h3>C Keywords List</h3>
+          <p>A list of 32 reserved keywords in c language is given below:</p>
+          <table class="table"><tbody><tr><td>auto</td><td>double</td><td>int</td><td>struct</td></tr><tr><td>break</td><td>else</td><td>long</td><td>switch</td></tr><tr><td>case</td><td>enum</td><td>register</td><td>typedef</td></tr><tr><td>char</td><td>extern</td><td>return</td><td>union</td></tr><tr><td>const</td><td>float</td><td>short</td><td>unsigned</td></tr><tr><td>continue</td><td>for</td><td>signed</td><td>void</td></tr><tr><td>default</td><td>goto</td><td>sizeof</td><td>volatile</td></tr><tr><td>do</td><td>if</td><td>static</td><td>while</td></tr></tbody></table>
+          <h3>Example code</h3>
+          <code class="code-box">
+            #include &ltstdio.h&gt <br><br>
+            int main() <br>
+            {<br>
+            &nbspfloat a, b;<br>
+            &nbspprintf("Showing how keywords are used.");<br> 
+            &nbspreturn 0;<br>
+            }
+          </code>
+          <p>In the above program, float and return are keywords. The float is used to declare variables, and return is used to return an integer type value in this program.</p>
+        </section>
+        <section class="main-section" id="C_Data_Types">
+          <header><h2>C Data Types</h2></header>
+          <p>A data-type in C programming is a set of values and is determined to act on those values. C provides various types of data-types which allow the programmer to select the appropriate type for the variable to set its value.</p>
+          <p>The data-type in a programming language is the collection of data with values having fixed meaning as well as characteristics. Some of them are an integer, floating point, character, etc. Usually, programming languages specify the range values for given data-type.</p>
+          <h3>C data types are used to:</h3>
+          <ul>
+            <li>Identify the type of a variable when it declared.</li>
+            <li>Identify the type of the return value of a function.</li>
+            <li>Identify the type of a parameter expected by a function.</li>
+          </ul>
+          <h3>ANSI C provides three types of data types:</h3>
+          <ol>
+            <li><strong>Primary(Built-in) Data Types:</strong>
+void, int, char, double and float.</li>
+            <li><strong>Derived Data Types:</strong>
+Array, References, and Pointers.</li>
+            <li><strong>User Defined Data Types:</strong>
+Structure, Union, and Enumeration.</li>
+          </ol>
+          <h3>Primary Data Types</h3>
+          <p>Every C compiler supports five primary data types.</p>
+          <table class="table"><tbody><tr><td width="125">void</td><td>As the name suggests, it holds no value and is generally used for specifying the type of function or what it returns. If the function has a void type, it means that the function will not return any value.</td></tr><tr><td>int</td><td>Used to denote an integer type.</td></tr><tr><td>char</td><td>Used to denote a character type.</td></tr><tr><td>float, double</td><td>Used to denote a floating point type.</td></tr><tr><td>int *, float *, char *</td><td>Used to denote a pointer type.</td></tr></tbody></table>
+          <h3>Derived Data Types</h3>
+          <p>C supports three derived data types:</p>
+          <table class="table"><tbody><tr><th style="width: 150px;">Data Types</th><th>Description</th></tr><tr><td>Arrays</td><td>Arrays are sequences of data items having homogeneous values. They have adjacent memory locations to store values.</td></tr><tr><td>References</td><td>Function pointers allow referencing functions with a particular signature.</td></tr><tr><td>Pointers</td><td>These are powerful C features which are used to access the memory and deal with their addresses.</td></tr></tbody></table>
+          <h3>User-defined Data Types</h3>
+          <p>C allows the feature called type definition which allows programmers to define their identifier that would represent an existing data type. There are three such types:</p>
+          <table class="table"><tbody><tr><th style="width: 150px;">Data Types</th><th>Description</th></tr><tr><td>Structure</td><td>It is a package of variables of different types under a single name. This is done to handle data efficiently. "struct" keyword is used to define a structure.</td></tr><tr><td>Union</td><td>These allow storing various data types in the same memory location. Programmers can define a union with different members, but only a single member can contain a value at a given time. It is used for</td></tr><tr><td>Enum</td><td>Enumeration is a special data type that consists of integral constants, and each of them is assigned with a specific name. "enum" keyword is used to define the enumerated data type.</td></tr></tbody></table>
+          <h3>Data types example code:</h3>
+          <code class="code-box">
+            <pre>#include &ltstdio.h&gt
+int main()
+{
+    int a = 4000; // positive integer data type
+    float b = 5.2324; // float data type
+    char c = 'Z'; // char data type
+    long d = 41657; // long positive integer data type
+    long e = -21556; // long -ve integer data type
+    int f = -185; // -ve integer data type
+    short g = 130; // short +ve integer data type
+    short h = -130; // short -ve integer data type
+    double i = 4.1234567890; // double float data type
+    float j = -3.55; // float data type
+}
+</pre>   
+          </code>
+        </section>
+        <section class="main-section" id="C_Program_Structure">
+          <header><h2>C Program Structure</h2></header>
+          <p>This lesson has detailed description of C program structure. It's essential for you before proceeding to learn more advanced lessons of C programming.</p>
+          <p>A C program involves the following sections:</p>
+          <ul>
+            <li>Documentations (Documentation Section)</li>
+            <li>Preprocessor Statements (Link Section)</li>
+            <li>Global Declarations (Definition Section)</li>
+            <li>The main() function
+              <ul>
+                <li>Local Declarations</li>
+                <li>Program Statements & Expressions</li>
+              </ul>
+            </li>
+            <li>User Defined Functions</li>
+          </ul>
+          <h3>C "Hello World" program:</h3>
+          <code class="code-box">
+            <pre>#include &ltstdio.h&gt
+int main()
+{
+    printf("Hello, World!\n");
+    return 0;
+}</pre>
+          </code>
+          <p>The above example has been used to print Hello, World! Text on the screen.</p>
+          <h3>Various parts of the program:</h3>
+          <table class="table"><tbody><tr><td>#include&lt;stdio.h&gt;</td><td>stdio is standard for input/output, this allows us to use some commands which includes a file called stdio.h. <p>or </p><p>This is a preprocessor command. That notifies the compiler to include the header file stdio.h in the program before compiling the source-code.</p></td></tr><tr><td>int/void main()</td><td>int/void is a return value, which will be explained in a while.</td></tr><tr><td>main()</td><td>The main() is the main function where program execution begins. Every C program must contain only one main function. <p>or </p><p>This is the main function, which is the default entry point for every C program and the void in front of it indicates that it does not return a value.</p></td></tr><tr><td>Braces</td><td>Two curly brackets "{...}" are used to group all statements. <p>or </p><p>Curly braces which shows how much the main() function has its scope.</p></td></tr><tr><td>printf()</td><td>It is a function in C, which prints text on the screen. <p>or </p><p>This is another pre-defined function of C which is used to be displayed text string in the screen.</p></td></tr><tr><td>return 0</td><td>At the end of the main function returns value 0.</td></tr></tbody></table>
+          <h3>Basic Structure of C Program</h3>
+          <p>The example discussed above illustrates how a simple C program looks like and how the program segment works. A C program may contain one or more sections which are figured above.</p>
+          <p>The Documentation section usually contains the collection of comment lines giving the name of the program, author's or programmer's name and few other details. The second part is the link-section which instructs the compiler to connect to the various functions from the system library. The Definition section describes all the symbolic-constants. The global declaration section is used to define those variables that are used globally within the entire program and is used in more than one function. This section also declares all the user-defined functions. Then comes the main(). All C programs must have a main() which contains two parts:
+            <ul>
+              <li>Declaration part</li>
+              <li>Execution part</li>
+</ul></p>
+          <p>The declaration part is used to declare all variables that will be used within the program. There needs to be at least one statement in the executable part, and these two parts are declared within the opening and closing curly braces of the main(). The execution of the program begins at the opening brace '{' and ends with the closing brace '}'. Also, it has to be noted that all the statements of these two parts need to be terminated with a semi-colon.</p>
+          <p>The sub-program section deals with all user-defined functions that are called from the main(). These user-defined functions are declared and usually defined after the main() function.</p>
+        </section>
+        <section class="main-section" id="C_Input_and_Output">
+          <header><h2>C Input and Output</h2></header>
+          <p>As we all know the three essential functions of a computer are reading, processing and writing data. Majority of the programs take data as input, and then after processing the processed data is being displayed which is called information. In C programming you can use scanf() and printf() predefined function to read and print data.</p>
+          <h3>Example code:</h3>
+          <code class="code-box">
+            <pre>#include &ltstdio.h&gt
+void main()
+{
+ int a,b,c;
+ printf("Please enter any two numbers: \n");
+ scanf("%d %d", &a, &b);
+ c =  a + b;
+ printf("The addition of two number is: %d", c);
+}</pre>
+          </code>
+          <h3>Output:</h3>
+          <code class="code-box">
+            <pre>Please enter any two numbers:
+12
+3
+The addition of two number is:15</pre>
+          </code>
+          <p>The above program scanf() is used to take input from the user, and respectively printf() is used to display output result on the screen.</p>
+          <h3>Managing Input/Output</h3>
+          <p>I/O operations are useful for a program to interact with users. stdlib is the standard C library for input-output operations. While dealing with input-output operations in C, two important streams play their role. These are:
+            <ol>
+              <li>Standard Input (stdin)</li>
+              <li>Standard Output (stdout)</li>
+            </ol></p>
+          <p>Standard input or stdin is used for taking input from devices such as the keyboard as a data stream. Standard output or stdout is used for giving output to a device such as a monitor. For using I/O functionality, programmers must include stdio header-file within the program.</p>
+        </section>
+        <section class="main-section" id="C_if-else_Statements">
+          <header><h2>C if-else Statements</h2></header>
+            <p>If else statements in C is also used to control the program flow based on some condition, only the difference is: it's used to execute some statement code block if the expression is evaluated to true, otherwise executes else statement code block.</p>
+            <h3>Syntax:</h3>
+            <code class="code-box">
+              <pre>if(test_expression)
+{
+   //execute your code
+}
+
+else
+{
+   //execute your code
+}</pre>
+            </code>
+            <h3>Example program:</h3>
+            <code class="code-box">
+              <pre>#include &ltstdio.h&gt
+
+int main()
+{
+  int a, b;
+
+  printf("Please enter the value for a:");
+  scanf("%d", & amp; a);
+
+  printf("\nPlease the value for b:");
+  scanf("%d", & amp; b);
+
+  if (a & gt; b) {  
+    printf("\n a is greater");
+  } else {  
+    printf("\n b is greater");
+  }
+  
+  return 0;
+}</pre>
+            </code>
+        </section>
+        <section class="main-section" id="C_for_Loops">
+          <header><h2>C for Loops</h2></header>
+          <p>C for loops is very similar to a while loops in that it continues to process a block of code until a statement becomes false, and everything is defined in a single line. The for loop is also entry-controlled loop.</p>
+          <h3>Syntax</h3>
+          <code class="code-box">
+            <pre>for ( init; condition; increment )
+{
+   statement(s);
+}</pre>
+          </code>
+          <h3>Example program:</h3>
+          <code class="code-box">
+            <pre>#include &ltstdio.h&gt 
+ 
+int main ()
+{
+  /* local variable Initialization */  int n,times=5;;
+    
+   /* for loops execution */   for( n = 1; n <= times; n = n + 1 )
+   {
+      printf("C for loops: %d\n", n);
+   }
+ 
+   return 0;
+}</pre>
+          </code>
+        </section>
+        <section class="main-section" id="C_Functions">
+          <header><h2>C Functions</h2></header>
+          <p>C function is a self-contained block of statements that can be executed repeatedly whenever we need it.</p>
+          <h3>Benefits of using functions:</h3>
+          <ul><li>The function provides modularity.</li><li>The function provides reusable code.</li><li>In large programs, debugging and editing tasks is easy with the use of functions.</li><li>The program can be modularized into smaller parts.</li><li>Separate function independently can be developed according to the needs.</li></ul>
+          <h3>Two types of functions in C</h3>
+          <ul><li><strong>Built-in(Library) Functions</strong><ul><li>The system provided these functions and stored in the library. Therefore it is also called <strong><em>Library Functions</em></strong>.<br>e.g. scanf(), printf(), strcpy, strlwr, strcmp, strlen, strcat etc.</li><li>To use these functions, you just need to include the appropriate C header files.</li></ul></li><li><strong>User Defined Functions </strong>These functions are defined by the user at the time of writing the program.</li></ul>
+          <h3>Parts of Function</h3>
+          <ol><li>Function Prototype (function declaration)</li><li>Function Definition</li><li>Function Call</li></ol>
+          <h4>Function prototype</h4>
+          <h5>Syntax:</h5>
+          <code class="code-box">
+            <pre>dataType functionName (Parameter List)</pre>
+          </code>
+          <h4>Function definition</h4>
+          <h5>Syntax:</h5>
+          <code class="code-box">
+            <pre>returnType functionName(Function arguments){
+  //body of the function 
+}</pre>
+          </code>
+          <h4>Calling a function in C</h4>
+          <h5>Example program:</h5>
+          <code class="code-box">
+            <pre>#include &ltstdio.h&gt
+
+/* function declaration */int addition();
+
+int main()
+{   
+    /* local variable definition */    int answer;
+    
+    /* calling a function to get addition value */    answer = addition();
+
+    printf("The addition of the two numbers is: %d\n",answer);
+    return 0;
+}
+
+/* function returning the addition of two numbers */int addition()
+{
+    /* local variable definition */    int num1 = 10, num2 = 5;
+    return num1+num2;
+}</pre>
+          </code>
+        </section> 
+        <section class="main-section" id="References">
+          <header><h2>References</h2></header>
+          <ul>
+            <li>All the references are taken from <a href="https://www.w3schools.in/c-tutorial/" target="_blank">W3Scools</a>
+          </ul>
+        </section>
+      </main>
+    </div>
+    
+  </body>
+</html>
