@@ -1,0 +1,69 @@
+body {
+  text-align: center;  
+  background-color: rgba(255, 153, 153, 0.5);
+}
+
+#title {
+  text-decoration: underline;
+  font-family: fantasy;
+  font-size: 50px;
+  font-weight: 200;
+  position: relative;
+  color: #008E8E;
+}
+
+#img-div {
+  postion: absolute;
+}
+
+#image {
+  display: block;
+  max-width: 25vw;
+  height: auto;
+  postion: relative;
+  margin-right: auto;
+  margin-left: auto;
+  border: black 3px solid;
+}
+
+#tribute-info {
+  postion: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  text-align: center;
+  background-color: rgba(125, 136, 153, 0.3); 
+  border-radius: 10%;
+}
+
+h2 {
+  font-size: 30px;
+  color: #840000;
+}
+
+ul {
+  display: block;
+  max-width: 600px;
+  postion: relative;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+blockquote {
+  max-width: 350px;
+  postion: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+a:hover {
+  color: red;
+}
