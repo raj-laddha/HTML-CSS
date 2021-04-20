@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Survey Form</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<html>
+ <body>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   <div class="container">
+    <header id="header">
+      <h1 id="title">COVID-19 Survey form</h1>
+        <p id="description">A survey form regarding Covid-19 awareness. Kindly fill to help us spread awarness</p>
+    </header>
+    <form id="survey-form">
+      <div class="group">
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <br>
+      <div class="group">
+        <label id="email-label" for="email">E-mail</label> <br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <br> 
+      <div class="group">
+        <label id="number-label" for="number">Age</label> <br>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="120" required>
+      </div>
+      <br>
+      <div class="group">
+        <label for="dropdown">Gender</label> <br>
+        <select id="dropdown" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="transgender">Transgender</option>
+        </select>
+      </div>
+      <br>
+      <div class="radio">
+        <label for="disability">Are you disabled &#63</label>
+        <input type="radio" id="disabled" name="disability" value="disabled">
+        <label for="disabled">Yes</label>
+        <input type="radio" id="not-disabled" name="disability" value="not-disabled" checked>
+        <label for="not-disabled">No</label>
+      </div>
+      <br>
+      <div class="checks">
+        <label id="label-queries" for="queries">Check the boxes which apply:</label> <br>
+        <input type="checkbox" id="cough" value="cough" name="queries">
+        <label for="cough">Developed cough in past 24 hours? </label>
+        <br>
+        <input type="checkbox" id="fever" value="fever" name="queries">
+        <label for="fever">Fever of more than 100 degrees? </label>
+        <br>
+        <input type="checkbox" id="sore-throat" value="sore-throat" name="queries">
+        <label for="sore-throat">Do you have a sore throat? </label>
+        <br>
+        <input type="checkbox" id="covid-contact" value="covid-contact" name="queries">
+        <label for="covid-contact">Met someone having Covid? </label>
+        <br>
+        <input type="checkbox" id="quarantine" value="quarantine" name="queries">
+        <label for="quarantine">Is anyone at home quarantined? </label>
+        <br>
+      </div>
+      <br>
+      <div id="comments">
+        <label for="comment">Any comments or experience?</label>
+        <textarea id="comment" name="comment" rows="6" cols="50" placeholder="Write here"></textarea>
+      </div>
+      <br>
+      <div class="button">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+    <footer id="footer">
+      <p><strong>Thank you for your time!</strong><p>
+    </footer>
+  </div>
+ </body>
+</html>

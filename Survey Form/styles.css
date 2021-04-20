@@ -1,0 +1,133 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background-image: url("https://www.tulsa-health.org/sites/default/files/2020-09/GettyImages-1210596198.jpg");
+  background-size: cover;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.container {
+  display: block;
+  width: 1000px; 
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+#header {
+  margin: auto;
+  max-width: 75%;
+  text-align: center;
+}
+
+#header h1 {
+  text-decoration: underline;
+  color: #1B1B1B;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+#header p {
+  font-size: 20px;
+  text-shadow: 0px 0px 1px #000000;
+}
+
+#footer {
+  margin: auto;
+  max-width: 75%;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0px 0px 1px #000000;
+}
+
+#survey-form {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  background-image: linear-gradient(135deg, #734b6d, #42275a, #243B55);
+  padding: 25px;
+  border-radius: 25px;
+  border: #000 3px solid;
+  color: white;
+}
+
+.group {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Garamond, serif;
+  font-weight: 600;
+}
+
+.group input, select{
+  width: 50%;
+  height: 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-family: sans-sherif;
+}
+
+.radio {
+  font-size: 20px;
+  font-family: Garamond, serif;
+  font-weight: 600;
+}
+
+.radio input {
+  width: 20px;
+  height: 15px;
+}
+
+.checks {
+  font-size: 20px;
+  line-height: 35px;
+  color: #CCC;
+}
+
+.checks input {
+  height: 15px;
+  width: 15px; 
+}
+
+#label-queries {
+  font-family: Garamond, serif;
+  font-weight: 600;
+}
+
+#comments {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 35px;
+  font-family: Garamond, serif;
+  font-weight: 600;
+}
+
+#comments textarea{
+  width: 75%;
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: monospace;
+  background-color: hsl(198, 58%, 70%);
+}
